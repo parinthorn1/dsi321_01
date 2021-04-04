@@ -37,7 +37,7 @@ d =  {
         'tc': d['WeatherForecasts'][0]['forecasts'][0]['data']['tc'],
         'rain': d['WeatherForecasts'][0]['forecasts'][0]['data']['rain']
     }
-df_out = pd.read_csv('/home/chayapone001/Chayapone_TMD_Contab/TMD_data_Jay.csv')
+df_out = pd.read_csv('/home/parinthorn/dsi321_01/TMD_data_6109656246.csv')
 df_out = df_out.drop(columns=['Unnamed: 0'])
 df_out.loc[len(df_out)]=['Ranong',d['time'],d['tc'],d['rh'],d['rain']]
-df_out.to_csv('/home/chayapone001/Chayapone_TMD_Contab/TMD_data_Jay.csv')
+df_out.to_csv('/home/parinthorn/dsi321_01/TMD_data_6109656246.csv')
